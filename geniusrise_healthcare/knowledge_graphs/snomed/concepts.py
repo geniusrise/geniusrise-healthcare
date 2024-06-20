@@ -42,7 +42,7 @@ def process_concept_file(concept_file: str, G: nx.DiGraph) -> None:
 
     csv.field_size_limit(sys.maxsize)
 
-    with open(concept_file, "rbU") as f:
+    with open(concept_file, "r", newline='') as f:
         num_lines = sum(1 for _ in f)
 
     log.info(f"Loading concepts from {concept_file}")

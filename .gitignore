@@ -170,3 +170,4 @@ graphs/*
 saved/*
 saved-*/*
 faiss
+scripts/data/snomed.zip

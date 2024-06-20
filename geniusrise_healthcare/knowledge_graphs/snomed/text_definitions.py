@@ -31,7 +31,7 @@ def process_text_definition_file(text_definition_file: str, G: nx.DiGraph) -> No
     Returns:
         None
     """
-    with open(text_definition_file, "rbU") as f:
+    with open(text_definition_file, "r", newline='') as f:
         num_lines = sum(1 for _ in f)
 
     log.info(f"Loading text definitions from {text_definition_file}")

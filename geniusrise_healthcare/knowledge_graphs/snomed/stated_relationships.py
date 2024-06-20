@@ -33,7 +33,7 @@ def process_stated_relationship_file(stated_relationship_file: str, G: nx.DiGrap
     Returns:
         None
     """
-    with open(stated_relationship_file, "rbU") as f:
+    with open(stated_relationship_file, "r", newline='') as f:
         num_lines = sum(1 for _ in f)
 
     log.info(f"Loading stated relationships from {stated_relationship_file}")

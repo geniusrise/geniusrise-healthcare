@@ -6,7 +6,7 @@ source venv/bin/activate
 
 apt update
 apt install -y vim
-apt install -y python3-dev libpq-dev
+apt install -y python3-dev libpq-dev unzip
 apt-get -y install intel-mkl htop nvtop swig
 
 

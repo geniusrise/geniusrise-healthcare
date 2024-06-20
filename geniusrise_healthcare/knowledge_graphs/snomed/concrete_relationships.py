@@ -33,7 +33,7 @@ def process_concrete_values_file(concrete_values_file: str, G: nx.DiGraph) -> No
     Returns:
         None
     """
-    with open(concrete_values_file, "rbU") as f:
+    with open(concrete_values_file, "r", newline='') as f:
         num_lines = sum(1 for _ in f)
 
     log.info(f"Loading concrete values from {concrete_values_file}")

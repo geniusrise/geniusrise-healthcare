@@ -95,7 +95,7 @@ def process_refsets_file(owl_file: str, G: nx.DiGraph) -> None:
     Returns:
         None
     """
-    with open(owl_file, "rbU") as f:
+    with open(owl_file, "r", newline='') as f:
         num_lines = sum(1 for _ in f)
 
     log.info(f"Loading OWL expressions from {owl_file}")
